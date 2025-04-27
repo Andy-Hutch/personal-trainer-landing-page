@@ -1,13 +1,7 @@
+// src/react-scroll.d.ts
 declare module 'react-scroll' {
-    import { ComponentType } from 'react';
-  
-    export const Link: ComponentType<{
-      to: string;
-      smooth: boolean;
-      duration: number;
-      offset?: number;
-      className?: string;
-      activeClass?: string;
-    }>;
+    import { LinkProps } from 'react-scroll'; // Assuming you want to use the correct type for Link
+    export const Link: React.ComponentType<LinkProps>;
   }
+  
   
