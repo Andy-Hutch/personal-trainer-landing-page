@@ -41,7 +41,8 @@ const Testimonials: FC = () => {
                 transition={{ duration: 0.5 }}
                 className="flex items-center justify-center gap-4 w-full"
               >
-                <p className="text-lg italic">"{testimonialsData[currentTestimonial].quote}"</p>
+                {/* Escaped Quotes */}
+                <p className="text-lg italic">&quot;{testimonialsData[currentTestimonial].quote}&quot;</p>
                 <div className="flex flex-col items-center">
                   <div className="font-semibold text-gray-700">
                     {testimonialsData[currentTestimonial].name}
@@ -58,6 +59,7 @@ const Testimonials: FC = () => {
 };
 
 export default Testimonials;
+
 
 
 
